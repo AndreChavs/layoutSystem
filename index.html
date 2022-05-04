@@ -57,7 +57,7 @@
             <div class="grid-2">Texto 6 Grid-2</div>
         </div>
     </section>
-
+<hr>
     <section class="bloco-A">
         <h2 style="text-align: center;">II - Usando Offset's</h2>
         <div class="container dflex">
@@ -106,10 +106,9 @@
             <div class="grid-6 offset-6">Grid-6 offset-6</div>
         </div>
     </section>
-
-    <h2 style="text-align: center;">III - Posicionamento dos blocos com Display Flex</h2>
-    
+<hr>
     <section class="bloco-A">
+        <h2 style="text-align: center;">III - Posicionamento dos blocos com Display Flex</h2>
         <h2>Flex Content : space-around</h2>
         <div class="container dflex flexcontent-sa">
             <div class="grid-4">Texto 1 Grid-4</div>
@@ -186,6 +185,92 @@
             <div class="grid-6">Grid-6</div>                        
             <div class="grid-3">Grid-3</div>                        
         </div>
-    </section>    
+    </section>
+    <section class="bloco-A">
+        <h2>Flex Direction : Column / central-flex</h2>        
+        <div class="container dflex flex-column central-flex">            
+            <div class="grid-3">Grid-3</div>                        
+            <div class="grid-6">Grid-6</div>                        
+            <div class="grid-9">Grid-9</div>                        
+            <div class="grid-12">Grid-12</div>                        
+        </div>
+    </section>
+    
+<hr>
+
+    <section class="bloco-A">
+        <h2>SubFlex : subdivisão do container flex - wrap</h2>        
+        <div class="container dflex">            
+            <div class="grid-9">
+                <div class="subflex wrap">
+                    <div class="grid-3">sub grid 3</div>
+                    <div class="grid-3">sub grid 3</div>
+                    <div class="grid-3">sub grid 3</div>
+                    <div class="grid-3">sub grid 3</div>
+                </div>
+            </div>                        
+            <div class="grid-3">Grid-3</div>                        
+        </div>
+    </section>
+    <section class="bloco-A">
+        <h2>SubFlex : subdivisão do container nowrap</h2>        
+        <div class="container dflex">            
+            <div class="grid-9">
+                <div class="subflex nowrap">
+                    <div class="grid-3">sub grid 3</div>
+                    <div class="grid-3">sub grid 3</div>
+                    <div class="grid-3">sub grid 3</div>
+                    <div class="grid-3">sub grid 3</div>
+                </div>
+            </div>                        
+            <div class="grid-3">Grid-3</div>                        
+        </div>
+    </section>
+<hr>
+    <section class="bloco-A">
+        <h2 style="text-align: center;">Flex Column</h2>        
+        <div class="container dflex">
+            <div class="grid-6 flex-column">
+                <div class="subflex flex-column">
+                    <div class="grid-12">Grid-12</div>
+                    <div class="grid-12">Grid-12</div>
+                </div>
+            </div> 
+            <div class="grid-6 flex-column">
+                <div class="subflex wrap">
+                    <div class="grid-12">Grid-12</div>
+                    <div class="grid-12">Grid-12</div>                    
+                </div>
+            </div>            
+        </div>
+    </section>
+    <section class="bloco-A">              
+        <div class="container flex-column">
+            <div class="grid-6 itemflex-center">
+                grid-6 align-self Center                
+            </div> 
+            <div class="grid-6 itemflex-end">
+                grid-6 align-self end               
+            </div>
+            <div class="grid-6 itemflex-start">
+                grid-6 align-self start                
+            </div> 
+            <div class="grid-6 itemflex-end">
+                grid-6 align-self end               
+            </div>            
+        </div>
+    </section>
+    <section class="bloco-A">             
+        <div class="container dflex wrap">
+            <div class="grid-6 itemflex-baseline">grid-6</div>                     
+            <div class="grid-6" style="margin-top: 20px;">grid-6</div>                     
+            <div class="grid-6 itemflex-baseline" style="margin-top: -10px;">grid-6</div>                     
+            <div class="grid-6" style="margin-top: 0;">grid-6</div>
+            <div class="grid-6 itemflex-baseline" style="margin-top: -10px;">grid-6</div>                     
+            <div class="grid-6" style="margin-top: 0;">grid-6</div>
+            <div class="grid-6 itemflex-baseline" style="margin-top: -10px;">grid-6</div>                     
+            <div class="grid-6" style="margin-top: 0;">grid-6</div>                                
+        </div>
+    </section>
 </body>
 </html>
