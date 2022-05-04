@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Layout System</title>
+</head>
+<body>
+    <h1 style="text-align: center;">
+        Regras do Layout-System
+    </h1>
+    <section class="bloco-A">
+        <h2 style="text-align: center;">I - Dimensionamento dos blocos</h2>
+        <div class="container dflex">
+            <div class="grid-4">Texto 1 Grid-4</div>
+            <div class="grid-4">Texto 2 Grid-4</div>
+            <div class="grid-4">Texto 3 Grid-4</div>
+        </div>
+        <h2>container -> Elemento intermediário, geralmente filho de uma section,
+            Elemento de conteúdo com margin laterias automaticas que centraliza o bloco intermediário que define a dimensão de acordo com o tamanho da tela e automaticamente centralizado.</h2>
+        <p>1º Dimensionamento : Ao elemento pai, denominamos o nome de bloco, onde ele terá um container que ficará centralizado na tela.</p>
+        <p>.container -> Essa classe deve centralizar os elementos que nela estarão contidos, podendo subdividi-los em em blocos ainda menores e responsivos.<br>
+            Essa classe possui como padrão um width fixo em px para cada tamanho de tela específico
+        </p>
+    </section>
+
+    <section class="bloco-A">
+        <div class="container dflex">
+            <div class="grid-6">Texto 1 Grid-6</div>            
+            <div class="grid-6">Texto 2 Grid-6</div>            
+        </div>
+    </section>
+
+    <section class="bloco-A">
+        <div class="container dflex">
+            <div class="grid-12">Texto 1 Grid-12</div>                        
+        </div>
+    </section>
+
+    <section class="bloco-A">
+        <div class="container dflex">
+            <div class="grid-6">Texto 1 Grid-6</div>
+            <div class="grid-3">Texto 2 Grid-3</div>
+            <div class="grid-3">Texto 3 Grid-3</div>
+        </div>
+    </section>
+    
+    <section class="bloco-A">
+        <div class="container dflex">
+            <div class="grid-2">Texto 1 Grid-2</div>
+            <div class="grid-2">Texto 2 Grid-2</div>
+            <div class="grid-2">Texto 3 Grid-2</div>
+            <div class="grid-2">Texto 4 Grid-2</div>
+            <div class="grid-2">Texto 5 Grid-2</div>
+            <div class="grid-2">Texto 6 Grid-2</div>
+        </div>
+    </section>
+
+    <section class="bloco-A">
+        <h2 style="text-align: center;">II - Usando Offset's</h2>
+        <div class="container dflex">
+            <div class="grid-2 offset-4">Grid-2 offset-4</div>
+            <div class="grid-2 offset-4">Grid-2 offset-4</div>
+        </div>
+    </section>
+    <section class="bloco-A">        
+        <div class="container dflex">
+            <div class="grid-6 offset-6">Grid-6 offset-6</div>            
+        </div>
+    </section>
+    <section class="bloco-A">        
+        <div class="container dflex">
+            <div class="grid-5 offset-1">Grid-5 offset-1</div>
+            <div class="grid-2 offset-4">Grid-2 offset-4</div>
+        </div>
+    </section>
+    <section class="bloco-A">        
+        <div class="container dflex">
+            <div class="grid-5 offset-3">Grid-5 offset-3</div>
+            <div class="grid-4">Grid-4</div>
+        </div>
+    </section>
+    <section class="bloco-A">        
+        <div class="container dflex">
+            <div class="grid-6">Grid-6 offset-0</div> <p>livre</p>            
+            <div class="grid-6 offset-6">Grid-6 offset-6</div>
+            <div class="grid-6">Grid-6 offset-0</div> <p>livre</p>
+            <div class="grid-6 offset-6">Grid-6 offset-6</div>
+        </div>
+    </section>
+    <section class="bloco-A">        
+        <div class="container dflex">
+            <div class="grid-6 offset-6">Grid-6 offset-6</div>
+            <div class="grid-6">Grid-6 offset-0</div> <p>livre</p>            
+            <div class="grid-6 offset-6">Grid-6 offset-6</div>
+            <div class="grid-6">Grid-6 offset-0</div> <p>livre</p>
+        </div>
+    </section>
+    <section class="bloco-A">        
+        <div class="container dflex">
+            <div class="grid-6 offset-6">Grid-6 offset-6</div>
+            <div class="grid-6">Grid-6 offset-0</div> <p>livre</p>            
+            <div class="grid-6">Grid-6 offset-0</div> <p>livre</p>
+            <div class="grid-6 offset-6">Grid-6 offset-6</div>
+        </div>
+    </section>
+
+    <h2 style="text-align: center;">III - Posicionamento dos blocos com Display Flex</h2>
+    
+    <section class="bloco-A">
+        <h2>Flex Content : space-around</h2>
+        <div class="container dflex flexcontent-sa">
+            <div class="grid-4">Texto 1 Grid-4</div>
+            <div class="grid-2">Grid-2</div>
+            <div class="grid-2">Texto 2 Grid-2</div>            
+        </div>
+    </section>
+
+    <section class="bloco-A">
+        <h2>Flex Content : space-between</h2>
+        <div class="container dflex flexcontent-sb">
+            <div class="grid-4">Texto 1 Grid-4</div>
+            <div class="grid-2">Grid-2</div>
+            <div class="grid-2">Texto 2 Grid-2</div>            
+        </div>
+    </section>
+
+    <section class="bloco-A">
+        <h2>Flex Content : space-evenly</h2>
+        <div class="container dflex flexcontent-se">
+            <div class="grid-4">Texto 1 Grid-4</div>
+            <div class="grid-2">Grid-2</div>
+            <div class="grid-2">Texto 2 Grid-2</div>            
+        </div>
+    </section>
+    <section class="bloco-A">
+        <h2>Flex Content : space-evenly</h2>
+        <p>
+            Como só possui um elemento, este é centralizado devido
+            as margens lateriais serem equivalentes.
+        </p>
+        <div class="container dflex flexcontent-se">            
+            <div class="grid-2">Grid-2</div>                        
+        </div>
+    </section>
+    <section class="bloco-A">
+        <h2>Flex Content : center</h2>        
+        <div class="container dflex flexcontent-center">            
+            <div class="grid-2">Grid-2</div>                        
+            <div class="grid-4">Grid-4</div>                        
+        </div>
+    </section>
+    <section class="bloco-A">
+        <h2>Flex Content : center</h2>        
+        <div class="container dflex flexcontent-center">            
+            <div class="grid-2">Grid-2</div>                        
+            <div class="grid-4 offset-1">Grid-4 offset-1</div>                        
+        </div>
+    </section>
+    <section class="bloco-A">
+        <h2>Flex Direction : Column</h2>
+        <div class="container dflex flex-column">            
+            <div class="grid-6">Grid-6</div>                        
+            <div class="grid-3">Grid-3</div>                        
+            <div class="grid-2">Grid-2</div>                        
+            <div class="grid-1">Grid-1</div>                        
+        </div>
+    </section>
+    <section class="bloco-A">
+        <h2>Flex Direction : Column / end-flex</h2>
+        <div class="container dflex flex-column end-flex">            
+            <div class="grid-6">Grid-6</div>                        
+            <div class="grid-3">Grid-3</div>                        
+            <div class="grid-2">Grid-2</div>                        
+            <div class="grid-1">Grid-1</div>                        
+        </div>
+    </section>
+    
+    <section class="bloco-A">
+        <h2>Flex Direction : Column / central-flex</h2>        
+        <div class="container dflex flex-column central-flex">            
+            <div class="grid-12">Grid-12</div>                        
+            <div class="grid-9">Grid-9</div>                        
+            <div class="grid-6">Grid-6</div>                        
+            <div class="grid-3">Grid-3</div>                        
+        </div>
+    </section>    
+</body>
+</html>
